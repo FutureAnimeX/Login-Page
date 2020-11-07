@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title> Login Page </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/CSS">
+*{
+    margin: 0;
+    padding: 4%;
+    box-sizing: border-box;
+    font-family: 'Poppings', Sans-Serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(-30deg, #03a9f4 0%, #3a78b7 50%, #262626 50%, #607d8b 100%);
+}
+box{
+    position: relative;
+    padding: 50px;
+    width: 25px;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: gold;
+    border-radius: 6px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+}
+.box::after{
+    content: ;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%);
+}
+.box .form{
+    position: relative;
+    width: 100%;
+}
+.box .form h2{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.box .form .inputBx{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box .form .inputBx input{
+    border-radius: 20px;
+    background-radius: 13px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.2);
+}
+.box .form .inputBx input::placeholder{
+    color: #fff;
+}
+.box .form .inputBx input[type="submit"]{
+    font-family: Sans-Serif;
+    box-shadow: 0 28px 36px rgba(0,0,0,0.20), 0 14px 11px rgba(0,0,0,0.20);
+    align-content: center;
+    padding: 12px;
+    background-color: navy;
+    background-image: linear-gradient(to right, );
+    cursor: pointer;
+}
+.remember{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.box .form p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.box .form a, h1{
+    color: #fff;
+}
+   </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <div class="form">
+                <h1>Login</h1>
+                <form>
+                    <div class="inputBx">
+                        <input type="text" placeholder="username">
+                    </div>
+                    <div class="inputBx"><input type="password" placeholder="password">
+                    </div>
+                    <label class="remember"><input type="checkbox">Remember Me</label>
+                    <div class="inputBx">
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+                    <p>Forgot<a href="#">Username</a>/<a href="">Password</a>?</p>
+                    <p> Don't have an account? <a href="">Signup</a></p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
